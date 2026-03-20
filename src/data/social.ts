@@ -7,12 +7,12 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/balaji-chintam',
+    url: 'https://www.linkedin.com/in/balaji-chintham-852421225/',
     icon: 'linkedin'
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/balaji-chintam',
+    url: 'https://github.com/balu6914',
     icon: 'github'
   },
   {
@@ -22,7 +22,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'Twitter',
-    url: 'https://twitter.com/balaji_dev',
+    url: 'https://x.com/ChBcworld',
     icon: 'twitter'
   }
 ];

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { generateResumePDF } from '@/lib/resumeGenerator';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,10 @@ export default function Navbar() {
     { label: 'Experience', href: '/#experience' },
     { label: 'Contact', href: '/#contact' }
   ];
+
+  const handleDownloadResume = () => {
+    generateResumePDF();
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur border-b border-slate-700 z-50">
@@ -43,12 +48,12 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="/resume.pdf"
+            <button
+              onClick={handleDownloadResume}
               className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300"
             >
-              Resume
-            </a>
+              📥 Resume
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,12 +104,15 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="/resume.pdf"
-              className="block px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold text-center hover:bg-blue-700 transition duration-300"
+            <button
+              onClick={() => {
+                handleDownloadResume();
+                setIsOpen(false);
+              }}
+              className="block w-full px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold text-center hover:bg-blue-700 transition duration-300"
             >
-              Resume
-            </a>
+              📥 Resume
+            </button>
           </div>
         )}
       </div>
