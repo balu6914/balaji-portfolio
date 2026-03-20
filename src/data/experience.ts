@@ -13,13 +13,33 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    id: 'fortune-blink-sr',
+    position: 'Sr. Blockchain Developer',
+    company: 'Fortune Blink',
+    duration: 'Sep 2023 - Present',
+    startDate: 'Sep 20, 2023',
+    endDate: 'Present',
+    description: 'Leading blockchain development initiatives with focus on smart contract architecture, DeFi protocols, and cross-chain solutions.',
+    highlights: [
+      'Architecting blockchain infrastructure and smart contract systems',
+      'Leading development of decentralized finance protocols',
+      'Designing and implementing cross-chain solutions',
+      'Optimizing gas efficiency and transaction performance',
+      'Building scalable Web3 applications and interfaces',
+      'Contributing to protocol security and auditing',
+      'Mentoring junior developers on blockchain best practices'
+    ],
+    technologies: ['Solidity', 'Ethereum', 'Cosmos SDK', 'Go', 'React.js', 'Web3.js', 'TypeScript'],
+    type: 'full-time'
+  },
+  {
     id: 'cognizant-sr',
     position: 'Sr. Associate Blockchain Developer',
     company: 'Cognizant',
-    duration: '2022 - Present',
+    duration: 'Feb 2022 - Sep 2023',
     startDate: 'Feb 2022',
-    endDate: 'Present',
-    description: 'Leading blockchain development initiatives with focus on smart contract architecture, DeFi protocols, and cross-chain solutions.',
+    endDate: 'Sep 18, 2023',
+    description: 'Led blockchain development initiatives with focus on smart contract architecture, DeFi protocols, and cross-chain solutions.',
     highlights: [
       'Developed and deployed 15+ Ethereum smart contracts (Breeding, Staking, DAO), improving performance by 30%',
       'Created responsive web3 front-end interfaces, increasing user engagement by 20%',
