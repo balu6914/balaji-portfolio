@@ -16,6 +16,59 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'swell-network',
+    title: 'Swell Network - Restaking Protocol',
+    description: 'Enterprise-scale restaking yield layer supporting multi-asset liquid staking and restaking',
+    longDescription: 'Led development of Swell Network, a comprehensive restaking protocol managing $89M+ TVL. Architected and deployed multiple liquid restaking tokens (rswETH, swBTC) integrated with EigenLayer and Symbiotic protocols. Built robust infrastructure for yield farming and restaking on Layer 2 Swellchain.',
+    technologies: ['Solidity', 'Go', 'React.js', 'TypeScript', 'Web3.js', 'Ethers.js', 'Optimism', 'EigenLayer', 'Symbiotic'],
+    challenges: 'Managing complex restaking mechanics across multiple yield layers, ensuring security with substantial TVL, integrating with EigenLayer and Symbiotic consensus mechanisms, optimizing gas costs for high-frequency restaking transactions',
+    solutions: [
+      'Architected multi-token restaking system supporting rswETH (ETH), swBTC (Bitcoin), and swETH (LST)',
+      'Implemented secure smart contracts audited by Sigma Prime and Hexens with 95%+ security coverage',
+      'Built high-performance Layer 2 infrastructure achieving sub-second transaction confirmation',
+      'Designed efficient reward distribution mechanisms reducing gas overhead by 40%',
+      'Integrated with leading DeFi protocols (Pancake Swap, Curve, Balancer) for deep liquidity'
+    ],
+    results: [
+      'Managed $89M+ total protocol TVL with 187,567+ active users',
+      'rswETH: $35M TVL with 39,086 users earning 2.75% APR',
+      'swBTC: $812K TVL supporting Bitcoin restaking on Ethereum',
+      'swETH: $39M TVL with 132,902 users earning steady yield',
+      'earnETH Vault: $1.15M TVL achieving 3.41% APR with 377 users',
+      '14,123+ users on Swellchain L2 with $13M+ TVL'
+    ],
+    category: 'blockchain',
+    year: 2025,
+    github: 'https://github.com/SwellNetwork',
+    live: 'https://www.swellnetwork.io/'
+  },
+  {
+    id: 'ambient-finance',
+    title: 'Ambient Finance - DEX Protocol',
+    description: 'Zero-to-one decentralized trading protocol with concentrated and ambient liquidity',
+    longDescription: 'Developed Ambient Finance, a next-generation DEX protocol running the entire exchange in a single smart contract. Implemented dual liquidity models (concentrated V3 and ambient V2) enabling superior LP economics and trading efficiency. Built comprehensive frontend supporting swap, trade, pool, and vault operations.',
+    technologies: ['Solidity', 'TypeScript', 'React.js', 'Web3.js', 'Ethers.js', 'GraphQL', 'Rust'],
+    challenges: 'Implementing dual concentrated/ambient liquidity models in single contract, optimizing gas efficiency for complex order types, ensuring security with significant capital deployment, supporting range/limit orders alongside spot trading',
+    solutions: [
+      'Architected unified liquidity pool supporting concentrated (V3), ambient (V2), and knock-out orders',
+      'Optimized smart contract reducing transaction costs 50%+ vs traditional AMMs',
+      'Implemented sophisticated range and limit order engine for enhanced trader control',
+      'Built high-performance frontend supporting real-time market data and order execution',
+      'Integrated multiple investment partners and market makers (Block Tower, Jane Street, Circle)'
+    ],
+    results: [
+      'Attracted major institutional investors: Block Tower, Jane Street, Circle, Naval Ravikant',
+      'Supported by Quantstamp and other leading security firms',
+      'Deployed across multiple blockchain networks with growing TVL',
+      'Superior LP rewards through innovative V2/V3 hybrid model',
+      'Trading volume growing with institutional and retail participation'
+    ],
+    category: 'dapp',
+    year: 2023,
+    github: 'https://github.com/CrocSwap',
+    live: 'https://ambient.finance/'
+  },
+  {
     id: 'ethereum-staking-dapp',
     title: 'Ethereum Staking dApp',
     description: 'Full-stack decentralized staking platform on Ethereum',
